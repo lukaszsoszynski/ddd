@@ -4,28 +4,28 @@ import java.util.Date;
 import java.util.List;
 
 public class Domain {
-	String name;   //homel
-	
-	Zone zone;
-	
-	Date created;
-	
-	Date modified;
-	
-	Date expireDate;
-	
-	Registrar registrar; 
-	
-	Contact registrant;
-	
-	Contact technicalContact;
-	
-	Contact adminContact;
-	
-	List<NameServer> nameServers;
-	
-	String getDomainName() {
-		return String.format("%s.%s", name, zone.name);
+	private String name;   //homel
+
+	private Zone zone;
+
+	private Date created;
+
+	private Date modified;
+
+	private Date expireDate;
+
+	private Registrar registrar;
+
+	private Contact registrant;
+
+	private Contact technicalContact;
+
+	private Contact adminContact;
+
+	private List<NameServer> nameServers;
+
+	private String getDomainName() {
+		return String.format("%s.%s", name, zone.getName());
 	}
 	
 }

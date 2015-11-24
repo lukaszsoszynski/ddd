@@ -5,21 +5,21 @@ import java.util.Map;
 
 //TODO Prepaid (with balance), Postpaid
 public class Registrar {
-	
-	String name;
 
-	String address;
+	private String name;
 
-	String phoneNumber;
+	private String address;
 
-	String email;
+	private String phoneNumber;
 
-	Map<ZoneType, Price> zonePrices;
-	
-	RegistrarState state;
+	private String email;
+
+	private Map<ZoneType, Price> zonePrices;
+
+	private RegistrarState state;
 	
 	public static enum RegistrarState {
-		active, 
-		barred;
+		ACTIVE,
+		BARRED;
 	}
 }

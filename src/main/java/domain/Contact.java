@@ -1,11 +1,11 @@
 package domain;
 
 public class Contact {
-	String company;
-	
-	String city;
-	
-	String location;
-	
-	String phoneNo;
+	private String company;
+
+	private String city;
+
+	private String location;
+
+	private String phoneNo;
 }

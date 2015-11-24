@@ -1,7 +1,7 @@
 package domain;
 
 public class NameServer {
-	String name;
+	private String name;
 	
-	String ip; //optional
+	private String ip; //optional
 }

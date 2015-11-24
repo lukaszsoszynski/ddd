@@ -4,15 +4,19 @@ import java.io.File;
 import java.util.List;
 
 public class Zone {
-	String name;
-	
-	ZoneType type;
-	
-	ZoneHeader header;
-	
-	List<Domain> domains;
-	
-	File generateZoneFile() {
+	private String name;
+
+	private ZoneType type;
+
+	private ZoneHeader header;
+
+	private List<Domain> domains;
+
+	public String getName() {
+		return name;
+	}
+
+	public File generateZoneFile() {
 		//TODO change impl
 		return null;
 	}
